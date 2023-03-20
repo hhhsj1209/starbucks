@@ -25,6 +25,7 @@
     
     <!-- css위치 잡아주기 -->
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/signin.css">
        
     <!-- 정렬순서 잡아주기 위한 소스, lodash cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -44,6 +45,7 @@
     
     <!-- js위치 잡아주기 -->
     <script defer src="../js/common.js"></script>
+    <script defer src="../js/signin.js"></script>
  
 </head>
 
@@ -179,12 +181,33 @@
         
     </header>
 
+    <!--  -->
+    <section id="body_layout" class="signin">
+        <h1>로그인</h1>
+        <!-- 영역. card or box -->
+        <div class="signin_card">
+            <h2>
+                <span>Welcome!</span> 스타벅스 코리아에 오신 것을 환영합니다.
+            </h2>
 
-
-
-
-
-
+            <!-- form의 action=""은 다음으로 넘어갈 페이지, 아직 구현못하니 삭제 -->
+            <form>
+                <input type="text" name="" id="" placeholder="아이디를 입력해주세요.">
+                <input type="password" name="" id="" placeholder="비밀번호를 입력해주세요.">
+                <!-- 다음 페이지로 제출 -->
+                <input type="submit" value="로그인">
+                <p>
+                    * 타 사이트와 비밀번호를 동일하게 사용할 경우 도용의 위험이 있으므로,<br>정기적인 비밀번호 변경을 해주시길 바랍니다.
+                </p>
+            </form>
+            
+            <div class="action">
+                <a href="javascript:void(0)">회원가입</a>
+                <a href="javascript:void(0)">아이디 찾기</a>
+                <a href="javascript:void(0)">비밀번호 찾기</a>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -200,7 +223,7 @@
 
 
     
-    <!-- 푸터 -->
+    <!-- FOOTER -->
    <footer id="foot_layout">
     <div class="inner">
         <!-- ul.menu>li*8 -->
